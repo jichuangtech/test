@@ -153,4 +153,5 @@ whether to keep these settings?"</string>
     <string name="network_dns_same">Primary DNS cannot be the same, please enter other DNS</string>
     <string name="ott_wired_net_connect_state">Network Status</string>
     <string name="refresh_dhcp_info_finish">Refresh Finish</string>
+    <string name="enter_launcher">Enter Launcher</string>
 </resources>

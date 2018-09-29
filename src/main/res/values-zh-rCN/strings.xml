@@ -204,5 +204,6 @@
     <string name="check_register_status_failed_tip">检测注册状态失败，请重新尝试。</string>
     <string name="check_register_status_has_already_register_tip">已经注册成功，无需再次注册。</string>
     <string name="check_register_status_failed_format_tip">检测注册状态失败，请重新尝试：%s。</string>
+    <string name="enter_launcher">进入首页</string>
 </resources>
 

@@ -167,7 +167,7 @@ public class RegisterInfoRender implements NetPresenter.DeviceRegisterCallback {
                 public void run() {
                     notifyDevRegSuccess();
                 }
-            }, 1000);
+            }, 2000);
         }
     }
 

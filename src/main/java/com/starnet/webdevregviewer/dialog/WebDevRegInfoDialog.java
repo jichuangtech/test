@@ -2,15 +2,18 @@ package com.starnet.webdevregviewer.dialog;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.starnet.stbsystemapi.util.SystemProperties;
 import com.starnet.vsdk.vbase.logger.Logger;
 import com.starnet.webdevregviewer.R;
 import com.starnet.webdevregviewer.RegisterInfoRender;
+import com.starnet.webdevregviewer.util.ActivityUtils;
 import com.starnet.webdevregviewer.util.BaseConfigUtils;
 import com.starnet.webdevregviewer.util.HardwareInfoConfig;
 import com.starnet.webdevregviewer.util.LogFactory;
@@ -26,6 +29,7 @@ import butterknife.ButterKnife;
  */
 public class WebDevRegInfoDialog extends FlexDialog implements RegisterInfoRender.RenderCallback, HardwareInfoConfig.Callback {
     private static final String TAG = WebDevRegInfoDialog.class.getSimpleName();
+    public static final String GUIDE_SUCCESS_KEY = "persist.sys.router.registered";
     private Logger mLogger = LogFactory.newLogger();
     private HardwareInfoConfig mHardwareInfoConfig;
     public static final Theme THEME;
@@ -165,6 +169,18 @@ public class WebDevRegInfoDialog extends FlexDialog implements RegisterInfoRende
     }
 
 
+    private void startLauncher() {
+        String pkgName = "com.starnet.launcherjump";
+        String className = "com.starnet.launcherjump.LauncherJumpActivity";
+
+        Intent intent = new Intent();
+        intent.putExtra("NeedZeroConf", 1);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.setClassName(pkgName, className);
+
+        ActivityUtils.startActivity(getContext(), intent);
+    }
+
     @Override
     public void onShowRegErrorTip(int errorTipRes) {
         mLogger.e(TAG, " onShowRegErrorTip errorTipRes");
@@ -181,6 +197,16 @@ public class WebDevRegInfoDialog extends FlexDialog implements RegisterInfoRende
                 mRegDevErrorTv.setText(R.string.dev_reg_success);
 
                 leftBtnLayout.setVisibility(View.VISIBLE);
+
+                mLeftBtn.setText(R.string.enter_launcher);
+                mLeftBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        SystemProperties.set(GUIDE_SUCCESS_KEY, "1");
+                        startLauncher();
+                        dismiss();
+                    }
+                });
             }
         });
     }
@@ -194,6 +220,14 @@ public class WebDevRegInfoDialog extends FlexDialog implements RegisterInfoRende
                 mRegDevErrorTv.setText(errorTipRes);
 
                 leftBtnLayout.setVisibility(View.VISIBLE);
+
+                mLeftBtn.setText(R.string.back);
+                mLeftBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dismiss();
+                    }
+                });
             }
         });
     }
@@ -238,11 +272,5 @@ public class WebDevRegInfoDialog extends FlexDialog implements RegisterInfoRende
 
     private void setDefOnlyLeftBtnLayout() {
         mLeftBtn.requestFocus();
-        mLeftBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dismiss();
-            }
-        });
     }
 }
