@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/webDevRegRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 注册过程错误提示 -->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/regDevErrorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="70%w"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/errorTipTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/guide_prompt_dialog_tv_color"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            app:layout_marginTopPercent="8%h"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- 进度-->
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/registerProgressBarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%w"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/seekProgressTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:background="@drawable/seek_bar_tip"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="0"
+            />
+        <SeekBar
+            android:id="@+id/registerProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:thumb="@null"
+            android:max="100"
+            android:focusable="false"
+            android:progress="0"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/register_progress_seek_bar_bg"
+            />
+
+        <TextView
+            android:id="@+id/progressTipTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/guide_prompt_dialog_tv_color"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"
+            app:layout_marginTopPercent="8%h"
+            />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

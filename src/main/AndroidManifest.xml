@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.starnet.webdevregviewer">
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:name=".WebDevRegViewerApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <receiver android:name=".receiver.WebDevRegReceiver">
+            <intent-filter>
+                <action android:name="com.starnet.ott.action.router_webdevreg" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

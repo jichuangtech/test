@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">WebDevRegViewer</string>
+    <string name="delete_btn">Delete</string>
+    <string name="last_step">Last Step</string>
+    <string name="next_step">Next Step</string>
+    <string name="manual_configuration">Manual configuration</string>
+    <string name="auto_configuration">Auto configuration</string>
+    <string name="net_configuration">Net Configuration</string>
+    <string name="device_register">Device Register</string>
+    <string name="configuration_type">Configuration Type</string>
+    <string name="voip_configuration">Voip Configuration</string>
+    <string name="ott_net_configuration">OTT Net Configuration</string>
+    <string name="resolution_configuration">Resolution Configuration</string>
+    <string name="checking_net">In the network to detecting...</string>
+    <string name="check_net_confirm_tip">Whether or not to continue testing network?</string>
+    <string name="go_on">Continue</string>
+    <string name="save">Save</string>
+    <string name="refresh">Refresh</string>
+    <string name="bottom_btn_margin_bottom_percent">8%h</string>
+
+    <string name="pref_connect_name">连接名称</string>
+    <string name="pref_start_vlan">启动VLAN</string>
+    <string name="pref_pppoe_username">用户名</string>
+    <string name="pref_bind_port">绑定端口</string>
+    <string name="max_conn_name_tip">Connection has reached the maximum number of nam: %s</string>
+
+    <string name="display_set_auto">AUTO</string>
+    <string name="confirm">Confirm</string>
+    <string name="reset">Reset</string>
+    <string name="back">Back</string>
+    <string name="display_change_fail_confirm2">TV does not support this format</string>
+    <string name="device_register_item_width_percent">85%w</string>
+    <string name="dev_register_password">Password：</string>
+    <string name="time_out_tip">Internal timeout; </string>
+    <string name="error_internal_tip">Internal error</string>
+    <string name="prompt_title">Prompt</string>
+    <string name="internet_not_connected_next_tip">WAN port network is not connected,
+        Whether to enter the next configuration screen？</string>
+    <string name="internet_not_connected_goto_launcher_tip">WAN port network is not connected,
+        whether the application directly to the home page？</string>
+
+    <string name="getting_net">Get Net...</string>
+    <string name="getting_voip">Get Voip...</string>
+    <string name="setting_voip">Set up Voip...</string>
+    <string name="setting_voip_success">Set up Voip successful</string>
+    <string name="setting_voip_failed_format">Set up Voip failed:%s</string>
+    <string name="setting_voip_failed">Set up Voip failed</string>
+    <string name="vlanid_hint_volume">With the port</string>
+    <string name="will_go_to_launcher">Click "ok" to enter the home pag</string>
+    <string name="del_wan_comfirm_format">Whether you want to delete "%s" link？</string>
+    <string name="back_from_dev_reg_tip">Whether the equipment is being registered or not？</string>
+    <string name="def_ip_hint">0.0.0.0</string>
+    <string name="no_multi_tr069_tip">Existing TR069 connection, can not choose TR069 connection again。</string>
+    <string name="no_multi_voip_tip">Existing VOIP connection, can not choose VOIP connection again。</string>
+    <string name="settings_btn_title">Settings</string>
+
+    <string name="display_change_fail_confirm1">Switch to the standard</string>
+    <string name="display_confirm_msg">To be restored in %1$d seconds.</string>
+    <string name="display_change_confirm1">Confirm whether to switch to the standard</string>
+    <string name="display_change_confirm2">Select OK,if the TV has no output,automatic cut back after 15s original format</string>
+
+    <string name="display_set">Set Resolution</string>
+    <string name="display_standard_1080p_60">1080P_60Hz</string>
+    <string name="display_standard_1080p_50">1080P_50Hz</string>
+    <string name="display_standard_1080p_30">1080P_30Hz</string>
+    <string name="display_standard_1080p_25">1080P_25Hz</string>
+    <string name="display_standard_1080p_24">1080P_24Hz</string>
+    <string name="display_standard_1080i_60">1080I_60Hz</string>
+    <string name="display_standard_1080i_50">1080I_50Hz</string>
+    <string name="display_standard_720p_60">720P_60Hz</string>
+    <string name="display_standard_720p_50">720P_50Hz</string>
+    <string name="display_standard_576p_50">576P_50Hz</string>
+    <string name="display_standard_480p_60">480P_60Hz</string>
+    <string name="display_standard_pal">PAL</string>
+    <string name="display_standard_ntsc">NTSC</string>
+    <string name="display_standard_861d_640X480_60">640X480</string>
+    <string name="display_standard_vesa_800X600_60">800X600</string>
+    <string name="display_standard_vesa_1024X768_60">1024X768</string>
+    <string name="display_standard_vesa_1280X720_60">1280X720</string>
+    <string name="display_standard_vesa_1280X800_60">1280X800</string>
+    <string name="display_standard_vesa_1280X1024_60">1280X1024</string>
+    <string name="display_standard_vesa_1360X768_60">1360X768</string>
+    <string name="display_standard_vesa_1366X768_60">1366X768</string>
+    <string name="display_standard_vesa_1400X1050_60">1400X1050</string>
+    <string name="display_standard_vesa_1440X900_60">1440X900</string>
+    <string name="display_standard_vesa_1440X900_60_RB">1440X900_RB</string>
+    <string name="display_standard_vesa_1600X1200_60">1600X1200</string>
+    <string name="display_standard_vesa_1680X1050_60">1680X1050</string>
+    <string name="display_standard_vesa_1680X1050_60_RB">1680X1050_RB</string>
+    <string name="display_standard_vesa_1920X1080_60">1920X1080</string>
+    <string name="display_standard_vesa_1920X1200_60">1920X1200</string>
+    <string name="display_standard_vesa_1920X1440_60">1920X1440</string>
+    <string name="display_standard_vesa_2048X1152_60">2048X1152</string>
+    <string name="display_standard_vesa_2560X1440_60_RB">2560X1440</string>
+    <string name="display_standard_vesa_2560X1600_60_RB">2560X1600</string>
+    <string name="display_standard_3840_2160p_24">3840_2160P_24Hz</string>
+    <string name="display_standard_3840_2160p_25">3840_2160P_25Hz</string>
+    <string name="display_standard_3840_2160p_30">3840X2160P_30Hz</string>
+    <string name="display_standard_3840_2160p_60">3840X2160P_60Hz</string>
+    <string name="display_standard_4096_2160p_24">4096X2160_24Hz</string>
+    <string name="display_standard_4096_2160p_25">4096X2160_25Hz</string>
+    <string name="display_standard_4096_2160p_30">4096X2160_30Hz</string>
+    <string name="display_standard_4096_2160p_60">4096X2160_60Hz</string>
+    <string name="display_standard_auto">AUTO</string>
+    <string name="display_mod_set">Set Mode</string>
+    <string name="display_mod_set_pal">PAL</string>
+    <string name="display_mod_set_ntsc">NTSC</string>
+    <string name="display_position">Change Image Position</string>
+    <string name="display_position_left">Left</string>
+    <string name="display_position_right">Right</string>
+    <string name="display_position_top">Top</string>
+    <string name="display_position_bottom">Bottom</string>
+    <string name="display_sound">Set Sound</string>
+    <string name="display_dolby">Audio Setting</string>
+    <string name="display_sound_hdmi">HDMI</string>
+    <string name="display_sound_spdif">SPDIF</string>
+    <string name="display_video_proportion">Video Proportion</string>
+    <string name="display_video_full_screen">Full Screen</string>
+    <string name="display_video_original_screen">Original Screen</string>
+    <string name="display_confirm_msg1">"Your resolution has been reconfigured,
+whether to keep these settings?"</string>
+
+    <string name="ott_wifi_hotspot_setting">WiFi Hotspot set</string>
+    <string name="wifi_hotspot_name">SSI</string>
+    <string name="wifi_enable_hidden">Enable WiFi Hidden</string>
+    <string name="wifi_hotspot_security">Security</string>
+    <string name="wifi_hotspot_password">Password</string>
+    <string name="enable_wifi_hotspot">Enable WiFi Hotspot</string>
+
+    <string name="setting_wifi_error">Set Wifi Failed</string>
+    <string name="getting_wifi_error">Get Wifi Failed</string>
+    <string name="getting_wifi_error_format">Get Wifi Failed:%s</string>
+    <string name="setting_wifi_success">Get Wifi Successful</string>
+    <string name="account_password_is_null">account and password can not be empty</string>
+    <string name="setting_wifi">Set Wifi...</string>
+    <string name="getting_wifi">Get Wifi...</string>
+    <string name="wifi_hot_password_not_must_empty">Password not must empty</string>
+    <string name="wep_64_password_error">Password length is 5 WEP64 mode</string>
+    <string name="wep_128_password_error">Password length is 13 WEP128 mode</string>
+    <string name="show_password">Show Password</string>
+
+    <!-- ott有线网络设置 -->
+    <string name="ott_wired_net_status">Net Status</string>
+    <string name="ott_wired_net_mode">Net Mode</string>
+    <string name="ott_wired_net_username">Username</string>
+    <string name="ott_wired_net_password">Password</string>
+    <string name="ott_wird_net_dhcp_option60">支持Option60/Option61</string>
+
+    <string name="ott_net_mode_static">Static</string>
+    <string name="network_ip_getway_not_segment">IP and gateway is not a network segment</string>
+    <string name="network_ip_mask_not_segment">Please check the IP and subnet mask</string>
+    <string name="network_dns_illegal">DNS is not legal</string>
+    <string name="network_dns_same">Primary DNS cannot be the same, please enter other DNS</string>
+    <string name="ott_wired_net_connect_state">Network Status</string>
+    <string name="refresh_dhcp_info_finish">Refresh Finish</string>
+</resources>
