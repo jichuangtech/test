@@ -170,8 +170,8 @@ public class WebDevRegInfoDialog extends FlexDialog implements RegisterInfoRende
 
 
     private void startLauncher() {
-        String pkgName = "com.starnet.launcherjump";
-        String className = "com.starnet.launcherjump.LauncherJumpActivity";
+        String pkgName = "com.starnet.bootstrap";
+        String className = "com.starnet.bootstrap.BootActivity";
 
         Intent intent = new Intent();
         intent.putExtra("NeedZeroConf", 1);
